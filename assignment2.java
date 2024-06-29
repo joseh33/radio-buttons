@@ -49,8 +49,7 @@ public class RadioButtonDemo extends JPanel {
         dogButton.addActionListener(myListener);
         rabbitButton.addActionListener(myListener);
         pigButton.addActionListener(myListener);
-        picture = new JLabel(new ImageIcon("images/" 
-                                           + birdString 
+        picture = new JLabel(new ImageIcon(birdString 
 					   + ".jpg"));
 
         picture.setPreferredSize(new Dimension(177, 122));
@@ -71,8 +70,7 @@ public class RadioButtonDemo extends JPanel {
 
     class RadioListener implements ActionListener { 
         public void actionPerformed(ActionEvent e) {
-            picture.setIcon(new ImageIcon("images/" 
-                                          + e.getActionCommand() 
+            picture.setIcon(new ImageIcon(e.getActionCommand() 
                                           + ".jpg"));
         }
     }
