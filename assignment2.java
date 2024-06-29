@@ -51,7 +51,7 @@ public class RadioButtonDemo extends JPanel {
         pigButton.addActionListener(myListener);
         picture = new JLabel(new ImageIcon("images/" 
                                            + birdString 
-					   + ".gif"));
+					   + ".jpg"));
 
         picture.setPreferredSize(new Dimension(177, 122));
 
@@ -73,7 +73,7 @@ public class RadioButtonDemo extends JPanel {
         public void actionPerformed(ActionEvent e) {
             picture.setIcon(new ImageIcon("images/" 
                                           + e.getActionCommand() 
-                                          + ".gif"));
+                                          + ".jpg"));
         }
     }
 
